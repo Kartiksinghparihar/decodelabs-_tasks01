@@ -1,0 +1,72 @@
+
+---
+
+# PROJECT DOCUMENTATION
+
+```markdown
+# E-Commerce Data Analytics Project Documentation
+
+## 1. Introduction
+
+This project focuses on analyzing an E-Commerce dataset to derive meaningful business insights through data analytics and machine learning techniques.
+
+The project covers the complete data analytics workflow:
+
+- Data Collection
+- Data Cleaning
+- Exploratory Data Analysis
+- Statistical Analysis
+- Data Visualization
+- Predictive Modeling
+
+---
+
+## 2. Objectives
+
+The main objectives are:
+
+1. Understand the dataset structure.
+2. Handle missing values.
+3. Perform statistical analysis.
+4. Detect outliers.
+5. Visualize important business trends.
+6. Build machine learning models for prediction.
+
+---
+
+## 3. Dataset Description
+
+The dataset contains information related to online orders including:
+
+| Feature | Description |
+|----------|------------|
+| Date | Order Date |
+| Quantity | Number of Items Purchased |
+| UnitPrice | Price per Unit |
+| TotalPrice | Total Order Value |
+| CouponCode | Applied Discount Coupon |
+| PaymentMethod | Payment Mode |
+| OrderStatus | Delivery Status |
+| ReferralSource | Source of Customer |
+| ItemsInCart | Number of Items in Cart |
+
+---
+
+## 4. Data Preprocessing
+
+### Missing Value Handling
+
+The CouponCode column contained missing values.
+
+Techniques Used:
+
+- Row removal
+- Filling with "None"
+- Forward Fill Method
+
+### Data Standardization
+
+CouponCode values were cleaned using:
+
+```python
+str.strip().str.title()
